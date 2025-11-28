@@ -18,6 +18,7 @@ import jakarta.servlet.http.HttpServletResponse;
 	- http://localhost/hw02/calc/calculate/calc.jsp 입력 페이지 경로
 	- ex) 1 + 2 결과값 경로 http://localhost/hw02/calc/calculate?left=1&operator=%2B&right=2
 	- 싱글페이지가 아니라 멀티페이지로 구현
+	- 상태코드 구현
 */
 
 @WebServlet("/calc/calculate")
