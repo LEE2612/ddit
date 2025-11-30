@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <title>AJAX 계산기</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -122,8 +123,15 @@
             cursor: pointer;
         }
     </style>
+=======
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="${pageContext.request.contextPath}/resource/js/app/calculate.js"></script>
+>>>>>>> branch 'main' of https://github.com/LEE2612/ddit.git
 </head>
 <body>
+<<<<<<< HEAD
 <h1>AJAX 계산기</h1>
 
 <h4>수신 희망 컨텐츠 형식 선택</h4>
@@ -148,5 +156,30 @@
 <div id="resultArea">
     ex) 2 + 2 = 4 (결과는 여기에 표시)
 </div>
+=======
+    <form action="/hw02/calc/calculate">
+        <h4>수신 희망 컨텐츠 형식 선택</h4>
+        <label><input type="radio" name="accept" value="html" checked />HTML</label>
+        <label><input type="radio" name="accept" value="json" />JSON</label>
+
+        <br>
+        <input id="left" type="text" name="left"/>
+        <select id="operator" name="operator">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+        <input id="right" type="text" name="right"/> 
+        <br>
+
+        <button type="submit">전송</button>
+
+        <h4>결과값:</h4>
+    </form>
+
+    <div id="resultArea"></div>
+
+>>>>>>> branch 'main' of https://github.com/LEE2612/ddit.git
 </body>
 </html>
