@@ -20,12 +20,12 @@
 
 	<dependencies>
 		<!-- 서블릿 API (톰캣에서 제공) -->
-		<dependency>
+<!--		<dependency>
 			<groupId>jakarta.servlet</groupId>
 			<artifactId>jakarta.servlet-api</artifactId>
 			<version>6.0.0</version>
 			<scope>provided</scope>
-		</dependency>
+		</dependency> -->
 		<dependency>
     		<groupId>com.google.code.gson</groupId>
     		<artifactId>gson</artifactId>
@@ -36,15 +36,21 @@
     		<artifactId>jsoup</artifactId>
     		<version>1.17.2</version> 
 		</dependency>
-		<dependency>
+<!--		<dependency>
     		<groupId>jakarta.servlet.jsp.jstl</groupId>
     		<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-    		<version>3.0.0</version> </dependency>
+    		<version>3.0.0</version> 
+    	</dependency>-->
 		<dependency>
    			<groupId>org.glassfish.web</groupId>
     		<artifactId>jakarta.servlet.jsp.jstl</artifactId>
     		<version>3.0.1</version> 
     		<scope>runtime</scope> 
     	</dependency>
+		<dependency>
+			<groupId>kr.or.ddit</groupId>
+			<artifactId>Solo</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
